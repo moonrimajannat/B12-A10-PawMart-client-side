@@ -16,7 +16,7 @@ export default function Footer() {
           </h2>
         </div>
 
-        <p className="mt-4 mb-4 max-w-xl text-gray-600 text-sm md:text-base leading-relaxed">
+        <p className="mt-4 mb-4 max-w-xl text-gray-500 text-sm md:text-base leading-relaxed">
           PawMart connects local pet owners and buyers for adoption and pet care products.
         </p>       
         <div className="flex flex-wrap justify-center gap-6 text-gray-700 font-medium text-sm md:text-base">
