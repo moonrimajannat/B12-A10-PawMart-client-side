@@ -1,8 +1,17 @@
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import Banner from "../Components/Banner";
+import CategorySection from "../Components/CategorySection";
+import RecentListings from "../Components/RecentListing";
 
 const Home = () => {
     return (
         <div>
-            <h1 className="text-center text-5xl font-bold mt-40">Home Page</h1>
+            <Navbar />
+            <Banner />
+            <CategorySection />
+            <RecentListings />
+            <Footer />
         </div>
     );
 };
