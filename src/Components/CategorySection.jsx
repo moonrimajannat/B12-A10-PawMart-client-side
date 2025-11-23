@@ -32,9 +32,9 @@ export default function CategorySection() {
   ];
 
   return (
-    <section className="container mx-auto px-4 mt-20">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 text-center mb-12 tracking-tight">
-        Browse Categories
+    <section className="container mx-auto px-4 mt-14">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-10 tracking-tight">
+        Categories Section 
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
