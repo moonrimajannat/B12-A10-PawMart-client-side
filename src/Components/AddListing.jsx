@@ -10,7 +10,7 @@ import Helmet from "../Helmet/Helmet";
 const img_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
 const img_hosting_api = `https://api.imgbb.com/1/upload?key=${img_hosting_key}`;
 
-export default function AddListing() {
+const AddListing = () => {
     const { user } = useContext(AuthContext);
     const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
 
@@ -56,8 +56,7 @@ export default function AddListing() {
             Swal.fire("Error", error.message, "error");
         }
     };
-
-    return (
+     return (
         <div>
             <div className="flex justify-center items-center my-16">
                 <Helmet title="Add Listing Page" />
@@ -176,4 +175,6 @@ export default function AddListing() {
             </div>
         </div>
     );
-}
+};
+
+export default AddListing;
