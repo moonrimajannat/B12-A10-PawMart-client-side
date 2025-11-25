@@ -49,6 +49,13 @@ export default function Navbar() {
           >
             Pets & Supplies
           </NavLink>
+          <NavLink
+            to="/add-listing"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-blue-500 transition duration-200"
+          >
+            Add Listing
+          </NavLink>
         </div>
 
         {/* Auth + Avatar */}
@@ -108,6 +115,13 @@ export default function Navbar() {
             className="hover:text-blue-500 transition duration-200"
           >
             Pets & Supplies
+          </NavLink>
+          <NavLink
+            to="/add-listing"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-blue-500 transition duration-200"
+          >
+            Add Listing
           </NavLink>
 
           <hr />

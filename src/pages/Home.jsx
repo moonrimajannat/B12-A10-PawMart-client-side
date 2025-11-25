@@ -1,4 +1,3 @@
-import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Banner from "../Components/Banner";
 import CategorySection from "../Components/CategorySection";
@@ -11,13 +10,11 @@ const Home = () => {
     return (
         <div>
             <Helmet title="Home Page" />
-            <Navbar />
             <Banner />
             <CategorySection />
             <RecentListings />
             <WhyAdopt />
             <PetHeroes />
-            <Footer />
         </div>
     );
 };

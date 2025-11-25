@@ -5,6 +5,8 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import ErrorPage from "../pages/ErrorPage";
 import ListingDetails from "../components/ListingDetails";
+import AddListing from "../components/AddListing";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -19,11 +21,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/pets-supplies",
-                element: <Home></Home>,
+                element: ,
             },
             {
                 path: "/add-listing",
-                element: <Home></Home>,
+                element: <PrivateRoute><AddListing/></PrivateRoute> ,
             },
             {
                 path: "/my-listings",
