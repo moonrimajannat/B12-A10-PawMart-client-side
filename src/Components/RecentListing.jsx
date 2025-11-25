@@ -17,14 +17,12 @@ export default function RecentListings() {
         Recent Listings
       </h2>
 
-      {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {listings.slice(0, 6).map((item) => (
           <div
             key={item._id}
             className="bg-white shadow-md hover:shadow-xl rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 border border-gray-200"
           >
-            {/* Image */}
             <div className="h-56 w-full overflow-hidden">
               <img
                 src={item.image}
@@ -33,23 +31,19 @@ export default function RecentListings() {
               />
             </div>
 
-            {/* Content */}
             <div className="p-5">
               <h3 className="text-xl font-bold text-gray-800">{item.name}</h3>
               <p className="text-gray-500 text-sm mt-1">{item.category}</p>
 
-              {/* Price */}
               <p className="text-lg font-semibold text-gray-900 mt-3">
                 {item.price > 0 ? `$ ${item.price}` : "Free for Adoption"}
               </p>
 
-              {/* Location */}
               <p className="text-sm text-gray-500 mt-1">📍 {item.location}</p>
 
-              {/* Button */}
               <button
                 onClick={() => navigate(`/listingDetails/${item._id}`)}
-                className="w-full mt-5 py-2 text-center bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all"
+                className="cursor-pointer w-full mt-5 py-2 text-center bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all"
               >
                 See Details →
               </button>

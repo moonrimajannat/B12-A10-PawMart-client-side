@@ -4,6 +4,7 @@ import { useContext } from "react";
 import Swal from "sweetalert2";
 import axios from "axios";
 import { MdError } from "react-icons/md";
+import Helmet from "../Helmet/Helmet";
 
 // ImgBB
 const img_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
@@ -59,6 +60,7 @@ export default function AddListing() {
     return (
         <div>
             <div className="flex justify-center items-center my-16">
+                <Helmet title="Add Listing Page" />
                 <div className="rounded-2xl border-2 border-blue-400 w-full md:w-[600px] p-8">
                     <h1 className="text-4xl font-bold text-center mb-5">Add Listing</h1>
 

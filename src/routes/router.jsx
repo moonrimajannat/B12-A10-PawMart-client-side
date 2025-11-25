@@ -7,6 +7,7 @@ import ErrorPage from "../pages/ErrorPage";
 import ListingDetails from "../components/ListingDetails";
 import AddListing from "../components/AddListing";
 import PrivateRoute from "./PrivateRoute";
+import PetsSupplies from "../components/PetsSupplies";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/pets-supplies",
-                element: ,
+                element: <PetsSupplies/>,
             },
             {
                 path: "/add-listing",
