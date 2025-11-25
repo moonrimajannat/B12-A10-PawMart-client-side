@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { useForm } from "react-hook-form";
 
-export default function Listingdetails() {
+const ListingDetails = () => {
     const { id } = useParams();
     const { user } = useContext(AuthContext);
     const [listing, setListing] = useState(null);
@@ -186,4 +186,6 @@ export default function Listingdetails() {
             )}
         </div>
     );
-}
+};
+
+export default ListingDetails;
