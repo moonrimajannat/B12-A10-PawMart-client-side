@@ -8,6 +8,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
 import { updateProfile } from "firebase/auth";
 import axios from "axios";
+import Helmet from "../Helmet/Helmet";
 
 //img upload
 const img_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
@@ -69,10 +70,11 @@ const Register = () => {
 
     return (
         <div className="flex items-center gap-16 my-20 justify-center mb-16 p-5 lg:p-0">
+             <Helmet title="Register Page"/>
             <div className="rounded-2xl border-2 border-blue-400 w-full md:w-[500px]">
-                <h1 className="text-4xl text-black text-center font-bold my-5">SIGN UP</h1>
+                <h1 className="text-4xl text-black text-center font-bold my-5">Register</h1>
 
-                <p className="text-sm font-medium text-center my-2">Already Have an Account ? <Link to="/signin"><span className="header text-base">Please Sign In</span></Link></p>
+                <p className="text-sm font-medium text-center my-2">Already Have an Account ? <Link to="/login"><span className="header text-base">Please Login</span></Link></p>
 
                 {/* continue with google */}
                 <div className="flex items-center">

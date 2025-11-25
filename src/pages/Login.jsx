@@ -4,6 +4,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
 import Swal from "sweetalert2";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import Helmet from "../Helmet/Helmet";
 
 
 const Login = () => {
@@ -45,10 +46,11 @@ const Login = () => {
 
     return (
         <div className="flex my-20 items-center gap-20 justify-center p-5">
+             <Helmet title="Login Page"/>
             <div className="rounded-2xl border-2 border-blue-400 w-full md:w-[500px] p-1">
-                <h1 className="text-4xl text-black text-center font-bold my-5">SIGN IN</h1>
+                <h1 className="text-4xl text-black text-center font-bold my-5">Login</h1>
 
-                <p className="text-sm text-center font-medium my-2">New here ? <Link to="/signup"><span className="header text-base">Create a New Account</span></Link></p>
+                <p className="text-sm text-center font-medium my-2">New here ? <Link to="/register"><span className="header text-base">Create a New Account</span></Link></p>
 
                 {/* continue with google */}
                 <div className="flex flex-col items-center">
