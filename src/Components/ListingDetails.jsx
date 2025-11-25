@@ -18,7 +18,7 @@ export default function ListingDetails() {
     useEffect(() => {
         const fetchListing = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/listings/${id}`);
+                const res = await axios.get(`https://b12-a10-paw-mart-server-side.vercel.app/listings/${id}`);
                 setListing(res.data);
             } catch (error) {
                 console.error(error);
@@ -46,7 +46,7 @@ export default function ListingDetails() {
                 notes: data.notes,
             };
 
-            await axios.post("http://localhost:5000/orders", orderData);
+            await axios.post("https://b12-a10-paw-mart-server-side.vercel.app/orders", orderData);
 
             Swal.fire("Success!", "Order placed successfully!", "success");
             reset();

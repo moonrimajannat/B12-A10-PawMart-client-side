@@ -6,7 +6,7 @@ export default function RecentListings() {
   const [listings, setListings] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/listings")
+    fetch("https://b12-a10-paw-mart-server-side.vercel.app/listings")
       .then((res) => res.json())
       .then((data) => setListings(data))
   }, []);

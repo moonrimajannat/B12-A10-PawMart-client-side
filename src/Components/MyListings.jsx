@@ -12,7 +12,7 @@ export default function MyListings() {
         if (!user?.email) return;
 
         axios
-            .get(`http://localhost:5000/my-listings/${user.email}`)
+            .get(`https://b12-a10-paw-mart-server-side.vercel.app/my-listings/${user.email}`)
             .then((res) => setListings(res.data))
             .catch((err) => console.error(err));
     }, [user]);
@@ -32,7 +32,7 @@ export default function MyListings() {
         }).then((result) => {
             if (result.isConfirmed) {
                 axios
-                    .delete(`http://localhost:5000/listings/${id}`)
+                    .delete(`https://b12-a10-paw-mart-server-side.vercel.app/listings/${id}`)
                     .then((res) => {
                         if (res.data.deletedCount > 0) {
                             Swal.fire("Deleted!", "Listing has been deleted.", "success");
@@ -59,7 +59,7 @@ export default function MyListings() {
         };
 
         axios
-            .put(`http://localhost:5000/listings/${selectedItem._id}`, updatedData)
+            .put(`https://b12-a10-paw-mart-server-side.vercel.app/listings/${selectedItem._id}`, updatedData)
             .then((res) => {
                 if (res.data.modifiedCount > 0) {
                     Swal.fire("Updated!", "Listing updated successfully.", "success");

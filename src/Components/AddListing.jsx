@@ -45,7 +45,7 @@ export default function AddListing() {
                 email: user?.email,
             };
 
-            const res = await axios.post("http://localhost:5000/listings", listingData);
+            const res = await axios.post("https://b12-a10-paw-mart-server-side.vercel.app/listings", listingData);
 
             console.log(res.data);
             Swal.fire("Success!", "Listing added successfully!", "success");

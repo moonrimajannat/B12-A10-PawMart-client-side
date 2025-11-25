@@ -11,7 +11,7 @@ export default function PetsSupplies() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5000/listings")
+            .get("https://b12-a10-paw-mart-server-side.vercel.app/listings")
             .then((res) => {
                 setListings(res.data);
                 setFilteredListings(res.data);
