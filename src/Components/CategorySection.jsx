@@ -47,7 +47,7 @@ export default function CategorySection() {
             className="group cursor-pointer p-6 rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
           >
             <div
-              className={`w-20 h-20 mx-auto flex items-center justify-center text-5xl rounded-full bg-gradient-to-br ${cat.gradient} shadow-inner group-hover:scale-110 transition-transform`}
+              className={`w-20 h-20 mx-auto flex items-center justify-center text-5xl rounded-full bg-linear-to-br ${cat.gradient} shadow-inner group-hover:scale-110 transition-transform`}
             >
               {cat.icon}
             </div>

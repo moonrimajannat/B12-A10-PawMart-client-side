@@ -6,10 +6,9 @@ export default function RecentListings() {
   const [listings, setListings] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/listings?limit=6") // Adjust your API route
+    fetch("http://localhost:5000/listings")
       .then((res) => res.json())
       .then((data) => setListings(data))
-      .catch((err) => console.error(err));
   }, []);
 
   return (
@@ -20,7 +19,7 @@ export default function RecentListings() {
 
       {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {listings.map((item) => (
+        {listings.slice(0, 6).map((item) => (
           <div
             key={item._id}
             className="bg-white shadow-md hover:shadow-xl rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 border border-gray-200"
@@ -41,7 +40,7 @@ export default function RecentListings() {
 
               {/* Price */}
               <p className="text-lg font-semibold text-gray-900 mt-3">
-                {item.price > 0 ? `৳ ${item.price}` : "Free for Adoption"}
+                {item.price > 0 ? `$ ${item.price}` : "Free for Adoption"}
               </p>
 
               {/* Location */}
@@ -49,7 +48,7 @@ export default function RecentListings() {
 
               {/* Button */}
               <button
-                onClick={() => navigate(`/listing/${item._id}`)}
+                onClick={() => navigate(`/listingDetails/${item._id}`)}
                 className="w-full mt-5 py-2 text-center bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all"
               >
                 See Details →
