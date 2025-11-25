@@ -28,14 +28,14 @@ export default function Footer() {
           </Link>
 
           <Link
-            to="/contact"
+            to="/"
             className="hover:text-blue-500 transition duration-200"
           >
             Contact
           </Link>
 
           <Link
-            to="/terms"
+            to="/"
             className="hover:text-blue-500 transition duration-200"
           >
             Terms
