@@ -4,6 +4,8 @@ import Banner from "../Components/Banner";
 import CategorySection from "../Components/CategorySection";
 import RecentListings from "../Components/RecentListing";
 import Helmet from "../Helmet/Helmet";
+import WhyAdopt from "../components/WhyAdopt";
+import PetHeroes from "../components/PetHeroes";
 
 const Home = () => {
     return (
@@ -13,6 +15,8 @@ const Home = () => {
             <Banner />
             <CategorySection />
             <RecentListings />
+            <WhyAdopt />
+            <PetHeroes />
             <Footer />
         </div>
     );
