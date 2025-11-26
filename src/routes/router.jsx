@@ -5,10 +5,10 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import ErrorPage from "../pages/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
-import PetsSupplies from "../components/PetsSupplies";
 import MyListings from "../components/MyListings";
 import ListingDetails from "../components/ListingDetails";
 import AddListing from "../components/AddListing";
+import Petssupplies from "../components/PetsSupplies";
 
 
 const router = createBrowserRouter([
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/pets-supplies",
-                element: <PetsSupplies/>,
+                element: <Petssupplies/>,
             },
             {
                 path: "/add-listing",

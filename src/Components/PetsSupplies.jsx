@@ -3,7 +3,7 @@ import axios from "axios";
 import Helmet from "../Helmet/Helmet";
 import { useNavigate } from "react-router";
 
-export default function PetsSupplies() {
+export default function Petssupplies() {
     const [listings, setListings] = useState([]);
     const [filteredListings, setFilteredListings] = useState([]);
     const [categoryFilter, setCategoryFilter] = useState("");
