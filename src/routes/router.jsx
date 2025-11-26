@@ -5,10 +5,10 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import ErrorPage from "../pages/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
-import Petssupplies from "../components/PetsSupplies";
 import Mylistings from "../components/Mylistings";
 import Listingdetails from "../components/Listingdetails";
 import Addlisting from "../components/Addlisting";
+import Petssupplies from "../components/PetsSupplies";
 
 
 const router = createBrowserRouter([
