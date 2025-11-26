@@ -4,11 +4,11 @@ import Home from "../pages/Home";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
 import ErrorPage from "../pages/ErrorPage";
-import AddListing from "../components/AddListing";
 import PrivateRoute from "./PrivateRoute";
 import PetsSupplies from "../components/PetsSupplies";
 import MyListings from "../components/MyListings";
 import ListingDetails from "../components/ListingDetails";
+import Addlisting from "../components/AddListing";
 
 
 const router = createBrowserRouter([
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/add-listing",
-                element: <PrivateRoute><AddListing/></PrivateRoute> ,
+                element: <PrivateRoute><Addlisting/></PrivateRoute> ,
             },
             {
                 path: "/my-listings",
