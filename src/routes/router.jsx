@@ -8,7 +8,7 @@ import PrivateRoute from "./PrivateRoute";
 import PetsSupplies from "../components/PetsSupplies";
 import MyListings from "../components/MyListings";
 import ListingDetails from "../components/ListingDetails";
-import Addlisting from "../components/AddListing";
+import AddListing from "../components/AddListing";
 
 
 const router = createBrowserRouter([
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/add-listing",
-                element: <PrivateRoute><Addlisting/></PrivateRoute> ,
+                element: <PrivateRoute><AddListing/></PrivateRoute> ,
             },
             {
                 path: "/my-listings",

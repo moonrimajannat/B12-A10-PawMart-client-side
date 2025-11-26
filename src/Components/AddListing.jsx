@@ -10,7 +10,7 @@ import Helmet from "../Helmet/Helmet";
 const img_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
 const img_hosting_api = `https://api.imgbb.com/1/upload?key=${img_hosting_key}`;
 
-const Addlisting = () => {
+const AddListing = () => {
     const { user } = useContext(AuthContext);
     const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
 
@@ -177,4 +177,4 @@ const Addlisting = () => {
     );
 };
 
-export default Addlisting;
+export default AddListing;
