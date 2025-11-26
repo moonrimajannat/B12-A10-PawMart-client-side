@@ -5,10 +5,10 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import ErrorPage from "../pages/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
-import ListingDetails from "../components/ListingDetails";
-import AddListing from "../components/AddListing";
 import Petssupplies from "../components/PetsSupplies";
 import Mylistings from "../components/Mylistings";
+import Listingdetails from "../components/Listingdetails";
+import Addlisting from "../components/Addlisting";
 
 
 const router = createBrowserRouter([
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/add-listing",
-                element: <PrivateRoute><AddListing/></PrivateRoute> ,
+                element: <PrivateRoute><Addlisting/></PrivateRoute> ,
             },
             {
                 path: "/my-listings",
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/listingDetails/:id",
-                element: <ListingDetails/>,
+                element: <Listingdetails/>,
             },
 
         ]
