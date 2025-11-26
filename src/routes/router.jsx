@@ -5,10 +5,10 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import ErrorPage from "../pages/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
-import MyListings from "../components/MyListings";
 import ListingDetails from "../components/ListingDetails";
 import AddListing from "../components/AddListing";
 import Petssupplies from "../components/PetsSupplies";
+import Mylistings from "../components/Mylistings";
 
 
 const router = createBrowserRouter([
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/my-listings",
-                element: <PrivateRoute><MyListings/></PrivateRoute>,
+                element: <PrivateRoute><Mylistings/></PrivateRoute>,
             },
             {
                 path: "/login",

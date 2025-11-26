@@ -3,7 +3,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
-export default function MyListings() {
+export default function Mylistings() {
     const { user } = useContext(AuthContext);
     const [listings, setListings] = useState([]);
     const [selectedItem, setSelectedItem] = useState(null);
