@@ -1,9 +1,10 @@
 
 import Banner from "../components/Banner";
-import CategorySection from "../Components/CategorySection";
+import CategorySection from "../components/CategorySection";
 import PetHeroes from "../components/PetHeroes";
 import RecentListings from "../components/RecentListing";
 import WhyAdopt from "../components/WhyAdopt";
+import Helmet from "../Helmet/Helmet";
 
 const Home = () => {
     return (

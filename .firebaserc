@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "paw-mart-b9eeb"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
